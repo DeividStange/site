@@ -1,0 +1,413 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    height: 100%;
+}
+.menu-principal{
+    width: 900px;
+    height: 120px;
+    margin:auto;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    overflow: hidden;
+    float: left;
+    padding: 9px;
+    width: 80%;
+    margin: 0 0 0 0
+}
+.links{ 
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.coluna_menus{
+    height:55px;
+    width: auto;
+    border-top: 1px solid;    
+    background-image:url(/img/bancada5.png); 
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    justify-content:space-evenly;
+}
+
+       
+
+.apresentacao_links{
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    height:35px;
+    width: 140px;
+    font-size: 2rem;
+    transition: .5s;
+    align-items: center;
+}
+  
+.apresentacao_links:hover{
+    color: #fd0000;
+}
+.fundo{
+    background-image: url(/img/painel-slides.jpeg);
+}
+
+.boas-vindas{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 10px;
+    position: relative;
+    margin: 0 50px 0 50px;
+    width: auto;
+    height: 280px;
+    overflow: hidden;
+    font-size: 1.775rem;
+}
+.boas-vindas span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, rgb(163, 0, 0));
+    animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1 {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(100%);}
+}
+.boas-vindas span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgb(180, 2, 2));
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animar2 {
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(100%);}
+}
+
+.boas-vindas span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, transparent, rgb(5, 5, 5));
+    animation: animar3 2s linear infinite;
+}
+@keyframes animar3 {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+.boas-vindas span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgb(5, 5, 5));
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animar4 {
+         0%{transform: translateY(100%);}
+         100%{transform: translateY(-100%);}
+}
+.destaque_frase{
+    font-size: 3.75rem;
+    color: #c50000;
+}
+.background{
+    background-size: 100%;
+    background-image: url(/img/wall-gec2233f7b_1920.jpg);
+    background-size:auto;
+    background-repeat:repeat-y;
+}
+.container-imagens{
+    padding: 2px;
+    background-color: #000000;
+    position: relative;
+    width: auto;
+    margin-top: 50px;  
+}
+.conjunto_galeria{
+    overflow-x:auto;
+}
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;   
+}
+
+.fontetexto{
+    width: 45%;
+    height: 620px;
+    margin: 120px 0 0 570px;
+    align-items: center;
+    text-align: center;
+    color: hsl(0, 100%, 50%);
+    font-size: 2.625rem;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: linear-gradient(
+    to right, 
+    hsl(27, 98%, 46%) 0,
+    hsl(0, 100%, 39%) 10%,
+    hsl(0, 0%, 0%) 30% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite linear;
+}
+    @keyframes shine{
+    0%{
+        background-position: 0px;
+    }
+    60%{
+        background-position: 700px;
+    }
+    100%{
+        background-position: 1200px;
+    }
+}
+.fundotexto{
+    background-image: url(/img/trucker-gf4a76d5d7_1920.jpg);
+    background-repeat:round;
+    background-size: cover;
+
+}
+
+.destaque{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+  .paragrafo{
+    width: auto;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    color: hsl(0 ,0% ,30%);
+    font-size: 3.125rem;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: linear-gradient(
+    to right, 
+    hsl(39, 87%, 76%) 0,
+    hsl(0, 0%, 48%) 10%,
+    hsl(0, 0%, 0%) 20% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite linear;
+}
+    @keyframes shine{
+    0%{
+        background-position: 0px;
+    }
+    60%{
+        background-position: 400px;
+    }
+    100%{
+        background-position: 1300px;
+    }
+}
+
+.centralizar-tipo-servico{
+    width: 300px;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 70px;
+    margin: auto;        
+}
+
+.alinhamento-servicos{
+    background: linear-gradient(-45deg, #8b8b8b, #5e5555, #855a5a, #682727);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 45vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border: thin rgb(0, 0, 0) solid;
+    width: auto;
+    font-size: 1.875rem;
+    padding: 2px;
+    margin: 80px 0 0 0;
+    border: 3px solid black;
+    
+}
+@keyframes gradient{
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+.servicos{ 
+    display: inline-block;
+    width: 24.43%;
+}
+
+.amostras{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.amostras img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8px;
+    transition: .5s ease;
+}
+.amostras img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.container_informacoes{
+    width:99.8%;   
+    height: 400px;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-size: 28px;
+}
+
+.entre-em-contato{
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+.icones{
+    width: 1000px;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 0 50px 0;
+}
+.icones a{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background: #dddddd;
+    color: aliceblue;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 3.125rem;
+}
+.icones a:hover{
+    background: #020202;
+}
+.icones a:hover > img{
+    transform: scale(1) rotate(20deg);
+}
+
+.autor{
+    margin:0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: #313131;
+    width: 100%;
+    height: 1.5rem;
+    color: aliceblue;
+}
+
+@media (max-width: 1070px) {
+    .body{
+        width: 100%;
+    } 
+    main{
+        width:1070px;
+    }
+    .coluna_menus{
+        width: 1070px;
+    }
+    .galeria{
+        width:1700px;
+    }
+
+    .fontetexto{
+        margin: 0 0 0 450px;
+        width: 500px; 
+        font-size: 40px;
+        height: 500px;
+    }
+    .fundotexto{
+        height: 600px;
+        width: 1070px;
+        margin-top: 40px;
+    }
+    .alinhamento-servicos{
+        height: 400px;
+        width: 1070px;
+        align-items: center;
+        text-align: center;
+    }
+    .amostras{
+        width:1070px;
+        height: 600px;
+    }
+    .paragrafo{
+        width: 1070px;
+        align-items: center;
+        text-align: center;
+    }
+    .container_informacoes{
+        width: 1070px;
+        height: 500px;
+        justify-content: center;
+        color: #c50000;
+    }
+    .icones{
+        justify-content:end;
+        width: 1000px;
+       
+    }
+    .autor{
+        width: 1070px;
+        align-items: center;
+        text-align: center;
+    }
+
+}
